@@ -1,11 +1,11 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 namespace CollisionChecker
 {
     /// <summary>
-    /// Õ“Ë”»’èƒm[ƒhBGameObject‚ğw’è‚µ‚ÄÕ“Ë”»’è‚·‚éB
+    /// è¡çªåˆ¤å®šãƒãƒ¼ãƒ‰ã€‚GameObjectã‚’æŒ‡å®šã—ã¦è¡çªåˆ¤å®šã™ã‚‹ã€‚
     /// </summary>
     [UnitCategory("CollisionChecker")]
     [UnitTitle("Check Collision Object")]
@@ -52,7 +52,7 @@ namespace CollisionChecker
     }
 
     /// <summary>
-    /// Õ“Ë”»’èƒm[ƒhBGameObject‚Ì–¼‘O‚ğw’è‚µ‚ÄÕ“Ë”»’è‚·‚éB
+    /// è¡çªåˆ¤å®šãƒãƒ¼ãƒ‰ã€‚GameObjectã®åå‰ã‚’æŒ‡å®šã—ã¦è¡çªåˆ¤å®šã™ã‚‹ã€‚
     /// </summary>
     [UnitCategory("CollisionChecker")]
     [UnitTitle("Check Collision Object Name")]
@@ -99,7 +99,7 @@ namespace CollisionChecker
     }
 
     /// <summary>
-    /// Õ“Ë”»’èƒm[ƒhBƒ^ƒO‚ªİ’è‚³‚ê‚Ä‚¢‚éGameObject‚ğw’è‚µ‚ÄÕ“Ë”»’è‚·‚éB
+    /// è¡çªåˆ¤å®šãƒãƒ¼ãƒ‰ã€‚ã‚¿ã‚°ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹GameObjectã‚’æŒ‡å®šã—ã¦è¡çªåˆ¤å®šã™ã‚‹ã€‚
     /// </summary>
     [UnitCategory("CollisionChecker")]
     [UnitTitle("Check Collision Object Tag")]
@@ -146,7 +146,7 @@ namespace CollisionChecker
     }
 
     /// <summary>
-    /// Õ“Ë”»’èƒm[ƒhBƒ^ƒO–¼‚ğw’è‚µ‚ÄÕ“Ë”»’è‚·‚éB
+    /// è¡çªåˆ¤å®šãƒãƒ¼ãƒ‰ã€‚ã‚¿ã‚°åã‚’æŒ‡å®šã—ã¦è¡çªåˆ¤å®šã™ã‚‹ã€‚
     /// </summary>
     [UnitCategory("CollisionChecker")]
     [UnitTitle("Check Collision Object Tag Name")]
@@ -197,24 +197,24 @@ namespace CollisionChecker
     }
 
     /// <summary>
-    /// Õ“Ë”»’èƒm[ƒh‚ÅÕ“Ë”»’è‚ğ‚·‚é‚½‚ß‚ÌMonoBehaiviurƒNƒ‰ƒX‚Æƒwƒ‹ƒpƒƒ\ƒbƒh
+    /// è¡çªåˆ¤å®šãƒãƒ¼ãƒ‰ã§è¡çªåˆ¤å®šã‚’ã™ã‚‹ãŸã‚ã®MonoBehaiviurã‚¯ãƒ©ã‚¹ã¨ãƒ˜ãƒ«ãƒ‘ãƒ¡ã‚½ãƒƒãƒ‰
     /// </summary>
     public class CollisionChecker : MonoBehaviour
     {
         /// <summary>
-        /// ‰½‚àÕ“Ë‚µ‚Ä‚¢‚È‚¢‚±‚Æ‚ğw‚·•¶š—ñ
+        /// ä½•ã‚‚è¡çªã—ã¦ã„ãªã„ã“ã¨ã‚’æŒ‡ã™æ–‡å­—åˆ—
         /// </summary>
         public const string NullString = "None";
 
         /// <summary>
-        /// ƒ^ƒO‚ªİ’è‚³‚ê‚Ä‚¢‚È‚¢‚±‚Æ‚ğw‚·•¶š—ñ
+        /// ã‚¿ã‚°ãŒè¨­å®šã•ã‚Œã¦ã„ãªã„ã“ã¨ã‚’æŒ‡ã™æ–‡å­—åˆ—
         /// </summary>
         public const string UntaggedString = "Untagged";
 
         protected static int _MaxCollisionCount => 10;
 
         /// <summary>
-        /// Õ“Ë‚µ‚½ƒIƒuƒWƒFƒNƒg–¼‚ğ‹L‰¯‚µ‚Ä‚¨‚­Å‘å”
+        /// è¡çªã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã‚’è¨˜æ†¶ã—ã¦ãŠãæœ€å¤§æ•°
         /// </summary>
         public static int MaxCollisionCount
         {
@@ -225,7 +225,7 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// Õ“Ë‚µ‚½ƒIƒuƒWƒFƒNƒg–¼‚Æƒ^ƒO–¼‚ğ‹L˜^‚·‚é“à•”ƒf[ƒ^ƒNƒ‰ƒX
+        /// è¡çªã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã¨ã‚¿ã‚°åã‚’è¨˜éŒ²ã™ã‚‹å†…éƒ¨ãƒ‡ãƒ¼ã‚¿ã‚¯ãƒ©ã‚¹
         /// </summary>
         private class CollisionCheckerData
         {
@@ -240,7 +240,7 @@ namespace CollisionChecker
                 Count = 0;
             }
 
-            //’Ç‰Á
+            //è¿½åŠ 
             internal void Add(string obj, string tag)
             {
                 if (Count + 1 == MaxCollisionCount) return;
@@ -249,19 +249,19 @@ namespace CollisionChecker
                 Count++;
             }
 
-            //ƒNƒŠƒA
+            //ã‚¯ãƒªã‚¢
             internal void Clear()
             {
                 Count = 0;
             }
 
-            //ƒIƒuƒWƒFƒNƒg–¼‚Å”»’è
+            //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã§åˆ¤å®š
             internal bool CheckObjectName(string name)
             {
                 return Check(ObjectName, name, Count);
             }
 
-            //ƒ^ƒO–¼‚Å”»’è
+            //ã‚¿ã‚°åã§åˆ¤å®š
             internal bool CheckTagName(string name)
             {
                 return Check(TagName, name, Count);
@@ -278,15 +278,15 @@ namespace CollisionChecker
             }
         }
 
-        //ƒIƒuƒWƒFƒNƒg‚²‚Æ‚É‹L˜^‚·‚é‚½‚ß«‘Œ^
+        //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã”ã¨ã«è¨˜éŒ²ã™ã‚‹ãŸã‚è¾æ›¸å‹
         private static Dictionary<string, CollisionCheckerData> _ColObjDic = null;
 
         /// <summary>
-        /// ƒIƒuƒWƒFƒNƒg‚ÌƒV[ƒ“–¼‚ÆƒIƒuƒWƒFƒNƒg–¼‚Ìæ“¾B
-        /// Õ“Ë‹L˜^—p
+        /// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚·ãƒ¼ãƒ³åã¨ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã®å–å¾—ã€‚
+        /// è¡çªè¨˜éŒ²ç”¨
         /// </summary>
-        /// <param name="obj">ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <returns>"ƒV[ƒ“–¼::ƒIƒuƒWƒFƒNƒg–¼"‚Æ‚¢‚¤Œ`®‚Ì•¶š—ñ</returns>
+        /// <param name="obj">ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <returns>"ã‚·ãƒ¼ãƒ³å::ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå"ã¨ã„ã†å½¢å¼ã®æ–‡å­—åˆ—</returns>
         public static string GetSceneNameAndObjectName(GameObject obj)
         {
             if (obj == null) return NullString + "::" + NullString;
@@ -294,10 +294,10 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// ƒIƒuƒWƒFƒNƒg–¼‚Ìæ“¾‚ÆNullƒ`ƒFƒbƒN
+        /// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã®å–å¾—ã¨Nullãƒã‚§ãƒƒã‚¯
         /// </summary>
-        /// <param name="obj">ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <returns>ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg–¼Anull‚Ìê‡‚ÍNullStringƒtƒB[ƒ‹ƒh‚Ì’l(None)</returns>
+        /// <param name="obj">ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <returns>ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã€nullã®å ´åˆã¯NullStringãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å€¤(None)</returns>
         public static string GetObjectName(GameObject obj)
         {
             if (obj == null) return NullString;
@@ -305,10 +305,10 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// ƒ^ƒO–¼‚Ìæ“¾‚ÆNullƒ`ƒFƒbƒN
+        /// ã‚¿ã‚°åã®å–å¾—ã¨Nullãƒã‚§ãƒƒã‚¯
         /// </summary>
-        /// <param name="obj">ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <returns>ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg‚Éİ’è‚³‚ê‚Ä‚éƒ^ƒO–¼Bnull‚Ìê‡‚ÍUntaggedStringƒtƒB[ƒ‹ƒh‚Ì’l(Untagged)</returns>
+        /// <param name="obj">ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <returns>ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«è¨­å®šã•ã‚Œã¦ã‚‹ã‚¿ã‚°åã€‚nullã®å ´åˆã¯UntaggedStringãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å€¤(Untagged)</returns>
         public static string GetTagName(GameObject obj)
         {
             if (obj == null) return UntaggedString;
@@ -316,8 +316,8 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// €”õˆ—B
-        /// •K—v‚ÈƒCƒ“ƒXƒ^ƒ“ƒX‚Ì‘¶İ‚ğƒ`ƒFƒbƒN‚µ‚Ä•K—v‚È‚çì¬B
+        /// æº–å‚™å‡¦ç†ã€‚
+        /// å¿…è¦ãªã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®å­˜åœ¨ã‚’ãƒã‚§ãƒƒã‚¯ã—ã¦å¿…è¦ãªã‚‰ä½œæˆã€‚
         /// </summary>
         /// <param name="target"></param>
         public static void Preparation(GameObject target)
@@ -334,11 +334,11 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// Õ“Ë‚µ‚½ƒIƒuƒWƒFƒNƒg–¼‚Ìæ“¾
+        /// è¡çªã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã®å–å¾—
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <param name="index">ƒCƒ“ƒfƒbƒNƒX</param>
-        /// <returns>‚ ‚ê‚ÎƒIƒuƒWƒFƒNƒg–¼A‚È‚¯‚ê‚ÎNullStringƒtƒB[ƒ‹ƒh‚Ì’l(None)</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <param name="index">ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹</param>
+        /// <returns>ã‚ã‚Œã°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã€ãªã‘ã‚Œã°NullStringãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å€¤(None)</returns>
         public static string GetCollisionName(GameObject target, int index = 0)
         {
             if (target == null) return NullString;
@@ -348,11 +348,11 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// Õ“Ë‚µ‚½ƒ^ƒO–¼‚Ìæ“¾
+        /// è¡çªã—ãŸã‚¿ã‚°åã®å–å¾—
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <param name="index">ƒCƒ“ƒfƒbƒNƒX</param>
-        /// <returns>‚ ‚ê‚Îƒ^ƒO–¼A‚È‚¯‚ê‚ÎUntaggedStringƒtƒB[ƒ‹ƒh‚Ì’l(Untagged)</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <param name="index">ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹</param>
+        /// <returns>ã‚ã‚Œã°ã‚¿ã‚°åã€ãªã‘ã‚Œã°UntaggedStringãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å€¤(Untagged)</returns>
         public static string GetCollisionTagName(GameObject target, int index = 0)
         {
             if (target == null) return UntaggedString;
@@ -362,10 +362,10 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// Õ“Ë‚µ‚½ƒIƒuƒWƒFƒNƒg–¼‚ÌƒŠƒXƒg‚ğæ“¾
+        /// è¡çªã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã®ãƒªã‚¹ãƒˆã‚’å–å¾—
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <returns>ƒIƒuƒWƒFƒNƒg–¼‚ÌƒŠƒXƒg</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <returns>ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã®ãƒªã‚¹ãƒˆ</returns>
         public static List<string> GetCollisionObjectNameList(GameObject target)
         {
             List<string> list = new List<string>();
@@ -380,10 +380,10 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// Õ“Ë‚µ‚½ƒ^ƒO–¼‚ÌƒŠƒXƒg‚ğæ“¾
+        /// è¡çªã—ãŸã‚¿ã‚°åã®ãƒªã‚¹ãƒˆã‚’å–å¾—
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <returns>ƒ^ƒO–¼‚ÌƒŠƒXƒg</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <returns>ã‚¿ã‚°åã®ãƒªã‚¹ãƒˆ</returns>
         public static List<string> GetCollisionTagNameList(GameObject target)
         {
             List<string> list = new List<string>();
@@ -398,9 +398,9 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// Õ“Ë‹L˜^‚ğƒNƒŠƒA‚·‚é
+        /// è¡çªè¨˜éŒ²ã‚’ã‚¯ãƒªã‚¢ã™ã‚‹
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
         public static void ClearCollisionName(GameObject target)
         {
             if (target == null) return;
@@ -409,10 +409,10 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// Õ“Ë‚µ‚½‚Æ‚µ‚ÄÕ“Ë‹L˜^‚É’Ç‰Á‚·‚é
+        /// è¡çªã—ãŸã¨ã—ã¦è¡çªè¨˜éŒ²ã«è¿½åŠ ã™ã‚‹
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <param name="obj">Õ“Ë‚µ‚½ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <param name="obj">è¡çªã—ãŸã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
         public static void SetCollisionName(GameObject target, GameObject obj)
         {
             if (target == null) return;
@@ -421,22 +421,22 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// ƒQ[ƒ€ƒIƒuƒWƒFƒNƒg‚©‚çÕ“Ë”»’è
+        /// ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰è¡çªåˆ¤å®š
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <param name="obj">Õ“ËŠm”F‚·‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <returns>Õ“Ë‚µ‚½‚©‚Ç‚¤‚©‚Ìbool’l</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <param name="obj">è¡çªç¢ºèªã™ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <returns>è¡çªã—ãŸã‹ã©ã†ã‹ã®boolå€¤</returns>
         public static bool CheckCollisionObject(GameObject target, GameObject obj)
         {
             return CheckCollisionObject(target, GetObjectName(obj));
         }
 
         /// <summary>
-        /// ƒIƒuƒWƒFƒNƒg–¼‚©‚çÕ“Ë”»’è
+        /// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåã‹ã‚‰è¡çªåˆ¤å®š
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <param name="name">Õ“ËŠm”F‚·‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg‚Ì–¼‘O</param>
-        /// <returns>Õ“Ë‚µ‚½‚©‚Ç‚¤‚©‚Ìbool’l</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <param name="name">è¡çªç¢ºèªã™ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åå‰</param>
+        /// <returns>è¡çªã—ãŸã‹ã©ã†ã‹ã®boolå€¤</returns>
         public static bool CheckCollisionObject(GameObject target, string name)
         {
             if (target == null) return false;
@@ -445,22 +445,22 @@ namespace CollisionChecker
         }
 
         /// <summary>
-        /// ƒIƒuƒWƒFƒNƒg‚Ìƒ^ƒO–¼‚©‚çÕ“Ë”»’è
+        /// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚¿ã‚°åã‹ã‚‰è¡çªåˆ¤å®š
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <param name="obj">Õ“ËŠm”F‚·‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <returns>Õ“Ë‚µ‚½‚©‚Ç‚¤‚©‚Ìbool’l</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <param name="obj">è¡çªç¢ºèªã™ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <returns>è¡çªã—ãŸã‹ã©ã†ã‹ã®boolå€¤</returns>
         public static bool CheckCollisionTagName(GameObject target, GameObject obj)
         {
             return CheckCollisionTagName(target, GetTagName(obj));
         }
 
         /// <summary>
-        /// ƒ^ƒO–¼‚©‚çÕ“Ë”»’è
+        /// ã‚¿ã‚°åã‹ã‚‰è¡çªåˆ¤å®š
         /// </summary>
-        /// <param name="target">Õ“Ë”»’è‚µ‚Ä‚¢‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg</param>
-        /// <param name="name">Õ“ËŠm”F‚·‚éƒ^ƒO–¼</param>
-        /// <returns>Õ“Ë‚µ‚½‚©‚Ç‚¤‚©‚Ìbool’l</returns>
+        /// <param name="target">è¡çªåˆ¤å®šã—ã¦ã„ã‚‹ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ</param>
+        /// <param name="name">è¡çªç¢ºèªã™ã‚‹ã‚¿ã‚°å</param>
+        /// <returns>è¡çªã—ãŸã‹ã©ã†ã‹ã®boolå€¤</returns>
         public static bool CheckCollisionTagName(GameObject target, string name)
         {
             if (target == null) return false;
@@ -469,7 +469,7 @@ namespace CollisionChecker
         }
 
         //
-        //Õ“Ë‚µ‚½ƒIƒuƒWƒFƒNƒg‚ğ‹L˜^‚·‚é‚½‚ß‚ÌƒCƒxƒ“ƒgƒnƒ“ƒhƒ‰
+        //è¡çªã—ãŸã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¨˜éŒ²ã™ã‚‹ãŸã‚ã®ã‚¤ãƒ™ãƒ³ãƒˆãƒãƒ³ãƒ‰ãƒ©
         //
         public void OnCollisionEnter(Collision collision)
         {
